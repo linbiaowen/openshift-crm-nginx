@@ -1,0 +1,1 @@
+NGINX image to be used for CRM Frontend in a OpenShift environment.
