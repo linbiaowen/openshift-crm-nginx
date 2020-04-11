@@ -28,7 +28,8 @@ and installed with unprivileged status in order to deploy it in OpenShift.
 In order to create the proper image just execute:
 
 ```console
-docker build -f Dockerfile -t linbiaowen/nginx:latest $PWD
+## docker build -f Dockerfile -t linbiaowen/nginx:latest $PWD
+docker build -f Dockerfile -t linbiaowen/nginx:latest .
 ```
 
 Just the next step is to upload the image to the current repository:
