@@ -26,8 +26,9 @@ RUN touch /run/nginx.pid \
 # users are not allowed to listen on privileged ports
 RUN sed -i.bak 's/listen\(.*\)80;/listen 8080;/' /etc/nginx/nginx.conf
 
-RUN sed -i.bak "s/crm-backend-app/172.30.35.144/" /etc/nginx/nginx.conf
+RUN sed -i.bak "s/crm-backend-app/crm-backend.myproject.svc.cluster.local/" /etc/nginx/nginx.conf
 
+#RUN sed -i.bak "s/crm-backend-app/172.30.223.109/" /etc/nginx/nginx.conf
 
 EXPOSE 8080
 
